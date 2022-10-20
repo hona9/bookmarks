@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  dev-db:
+    image: postgres:13
+    ports:
+      - 5432:5432
+    environment:
+      POSTGREST_USER: postgres
+      POSTGREST_PASSWORD: 123
+      POSTGRES_DB: nest
